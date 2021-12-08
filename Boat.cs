@@ -15,5 +15,10 @@ namespace Abax
             BruttoTonnasje = brutto;
             Maksfart = fart;
         }
+
+        public override void Show()
+        {
+            Console.WriteLine($"Kjennetegn: {Kjennetegn}, {Kw}Effekt, Maksfart: {Maksfart}, {BruttoTonnasje}KG Bruttotonnasje");
+        }
     }
 }

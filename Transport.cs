@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Abax
 {   
-    /*
-     * 
-     */
     abstract public class Transport
     {
         public string TransportType;
@@ -23,9 +20,11 @@ namespace Abax
             TransportType = transportType;
         }
 
-        public string IsMoving(string TransportType)
+        public string Run(string TransportType)
         {
-              return $"{TransportType} Is moving";
+              return $"{TransportType} is moving";
         }
+
+        public abstract void Show();
     }
 }

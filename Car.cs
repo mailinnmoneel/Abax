@@ -17,5 +17,22 @@ namespace Abax
             Color = color;
             Type = type;
         }
+
+        public override void Show()
+        {
+            Console.WriteLine($"Reg.nr: {Kjennetegn}, {Kw}Kw effekt, Maksfart: {MaxSpeed} Farge: {Color}, Type: {Type}");
+            Console.WriteLine($"Reg.nr: {Kjennetegn}, {Kw}Kw effekt, Maksfart: {MaxSpeed} Farge: {Color}, Type: {Type}");
+        }
+        public void Compare(Car bil2)
+        {
+            if (Kjennetegn == bil2.Kjennetegn)
+            {
+                Console.WriteLine("Bil 1 og Bil 2 er samme bilen");
+            }
+            else
+            {
+                Console.WriteLine("Bil 1 og Bil 2 er ikke samme bilen");
+            }
+        }
     }
 }
