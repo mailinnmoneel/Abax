@@ -20,6 +20,10 @@ namespace Abax
            Egenvekt = egenvekt;
            Type = type;
        }
-   
+
+       public override void Show()
+       {
+           Console.WriteLine($"Reg.nr: {Kjennetegn}, {Kw}Kw effekt, Vingespenn: {Vingespenn}, Lasteevne: {Lasteevne}, Egenvekt: {Egenvekt}, Type: {Type}");
+        }
     }
 }
